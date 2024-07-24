@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wVN-F4-af4">
+                                <rect key="frame" x="124" y="213" width="145" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="MQS-i1-uvJ"/>
+                                    <constraint firstAttribute="height" constant="126" id="V22-u7-edL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The only password manager you’ll ever need." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exo-gQ-vN2">
+                                <rect key="frame" x="35" y="774" width="322" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Password Manager" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0P1-MJ-f94">
+                                <rect key="frame" x="88" y="361" width="216" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="1e9-RH-aYc"/>
+                                    <constraint firstAttribute="height" constant="98" id="KWH-zm-zFQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0P1-MJ-f94" firstAttribute="top" secondItem="wVN-F4-af4" secondAttribute="bottom" constant="22" id="4Jr-nG-oCp"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="wVN-F4-af4" secondAttribute="trailing" constant="124" id="6n8-h5-loI"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="exo-gQ-vN2" secondAttribute="bottom" constant="26" id="QWh-si-cz4"/>
+                            <constraint firstItem="exo-gQ-vN2" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="35" id="UIm-F6-t9T"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="exo-gQ-vN2" secondAttribute="trailing" constant="36" id="Wuq-5n-HCs"/>
+                            <constraint firstItem="0P1-MJ-f94" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="88" id="Z0F-ON-6OV"/>
+                            <constraint firstItem="wVN-F4-af4" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="124" id="a3N-NE-w6t"/>
+                            <constraint firstItem="exo-gQ-vN2" firstAttribute="top" secondItem="0P1-MJ-f94" secondAttribute="bottom" constant="315" id="fVx-uF-88Y"/>
+                            <constraint firstItem="exo-gQ-vN2" firstAttribute="top" secondItem="0P1-MJ-f94" secondAttribute="bottom" constant="315" id="j9O-tJ-tpP"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="0P1-MJ-f94" secondAttribute="trailing" constant="89" id="l0p-oM-LnX"/>
+                            <constraint firstItem="wVN-F4-af4" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="154" id="oYC-Sx-AIw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchIcon" width="300" height="300"/>
+    </resources>
+</document>
